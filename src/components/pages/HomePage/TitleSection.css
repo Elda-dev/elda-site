@@ -1,0 +1,51 @@
+:root {
+    --primary: #C2D3CD;
+
+    --gradient: linear-gradient(45deg,
+    #FFD1F7,
+    #FFE0E2,
+    #FFCCDF,
+    #FFF8DB,
+    #A3F3FF,
+    #DBE5FF,
+    #CCDAFF);
+}
+
+.title-wrapper {
+    margin: auto;
+    width: 100%;
+    text-align: center;
+}
+
+.title-header {
+    padding-top: 20%;
+    font-size: 4em;
+    font-family: sans-serif;
+    background-image: var(--gradient);
+    background-size: 400%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: bg-animation 60s infinite alternate;
+}
+
+.title-description {
+    padding-top: 10px;
+    font-size: 2em;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: var(--primary);
+}
+
+.down-arrow {
+    padding-top: 10px;
+    color: var(--primary);
+}
+
+.bottom-padding {
+    padding-bottom: 25%;
+}
+
+@keyframes bg-animation {
+    0% {background-position: left}
+    100% {background-position: right}
+}

@@ -28,32 +28,31 @@ function Navbar() {
          <div className="navbar">
              <div className="navbar-container container">
                   <Link to='/' className="navbar-logo">
-                      <BsCodeSlash className="navbar-icon"/>
                       elda();
                   </Link>
                  <div className="menu-icon" onClick={handleClick}>
                      {click ? <FaTimes className='fa-times'/> : <FaBars className='fa-bars'/>}
                  </div>
                  <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-                     <li className="nav-item">
-                         <Link to='/' className='nav-links'>
+                     <li>
+                         <button to='/' className='nav-item'>
                              Home
-                         </Link>
+                         </button>
                      </li>
-                     <li className="nav-item">
-                         <Link to='/' className='nav-links'>
+                     <li>
+                         <button to='/' className='nav-item'>
                              Projects
-                         </Link>
+                         </button>
                      </li>
-                     <li className="nav-item">
-                         <Link to='/' className='nav-links'>
+                     <li>
+                         <button to='/' className='nav-item'>
                              Blog
-                         </Link>
+                         </button>
                      </li>
-                     <li className="nav-item">
-                         <Link to='/' className='nav-links'>
+                     <li>
+                         <button to='/' className='nav-item'>
                              About
-                         </Link>
+                         </button>
                      </li>
                  </ul>
              </div>

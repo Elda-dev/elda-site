@@ -14,6 +14,7 @@
     position: sticky;
     top: 0;
     z-index: 999;
+    border-radius: 0 0 10px 10px;
 }
 
 .navbar-container {
@@ -37,7 +38,7 @@
     justify-self: start;
     cursor: pointer;
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 1.5rem;
     display: flex;
     align-items: center;
 }
@@ -54,18 +55,23 @@
 }
 
 .nav-item {
+    color: var(--primary);
+    font-size: 14px;
+    font-weight: bold;
     background: white;
     height: 32px;
     width: 96px;
     margin: .25em;
     border-radius: 10px;
-    text-align: center;
+    cursor: pointer;
+    border-style: none;
+    transition: border-radius 0.35s;
 }
 
 .nav-item:hover {
-    background: white;
     border-radius: 15px;
-    transition: border-radius 1s;
+    transition: border-radius 0.35s;
+    cursor: pointer;
 }
 
 .nav-links {
@@ -120,12 +126,23 @@
         transition: all 0.3s ease;
     }
 
-    .nav-item:hover {
-        border: none;
+    .nav-item {
+        color: var(--primary);
+        font-size: 28px;
+        font-weight: bold;
+        background: white;
+        height: 64px;
+        width: 256px;
+        margin: .25em;
+        border-radius: 10px;
+        cursor: pointer;
+        border-style: none;
     }
 
-    .nav-item {
-        width: 100%;
+    .nav-item:hover {
+        border-radius: 15px;
+        transition: border-radius 1s;
+        cursor: pointer;
     }
 
     .navbar-logo {
