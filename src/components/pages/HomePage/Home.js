@@ -9,6 +9,7 @@ function Home() {
         <>
             <TitleSection/>
             <MainSection {...homeObjOne} />
+            <MainSection {...homeObjTwo}/>
         </>
     )
 }

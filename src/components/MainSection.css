@@ -1,6 +1,16 @@
+:root {
+    --primary: #C2D3CD;
+    --pad: 200px;
+}
+
 .home__main-section {
     color: #fff;
-    padding: 250px 0;
+    padding-top: 150px;
+    padding-bottom: 200px;
+}
+
+.padding_override {
+    padding-bottom: 700px;
 }
 
 .home__main-row {
@@ -33,7 +43,7 @@
 }
 
 .top-line {
-    color: #f00946;
+    color: var(--primary);
     font-size: 16px;
     line-height: 16px;
     font-weight: 700;
@@ -48,10 +58,6 @@
     line-height: 1.2;
     font-weight: bold;
     color: #f7f8fa;
-}
-
-.dark {
-    color: #1c2237;
 }
 
 .darkBg {
@@ -70,18 +76,66 @@
 }
 
 .home__main-img {
-    max-width: 95%;
+    max-width: 100%;
     margin-top: 0;
     margin-right: 0;
     margin-left: 10px;
     padding-right: 0;
 }
 
-img {
+
+.image {
+    position: absolute;
+    border-radius: 15px;
+    transform: translateY(65px);
     border: 0;
     max-width: 100%;
     vertical-align: middle;
     display: inline-block;
+}
+
+.bg-image {
+    position: absolute;
+    border-radius: 15px;
+    transform: translateY(165px) translateX(150px);
+    border: 0;
+    max-width: 100%;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.buffer {
+    padding-bottom: var(--pad);
+}
+
+.button {
+    cursor: pointer;
+    height: 48px;
+    width: 192px;
+    font-weight: bold;
+    font-size: 12px;
+    color: white;
+    background: var(--primary);
+    border: none;
+    border-radius: 10px;
+    transition: border-radius 0.35s;
+}
+
+.button:hover {
+    border-radius: 15px;
+    transition: border-radius 0.35s;
+}
+
+.dark {
+    color: #1c2237;
+}
+
+.shadow {
+    box-shadow: 20px 20px 30px #242424;
+}
+
+.darkshadow {
+    box-shadow: 20px 20px 30px #000000;
 }
 
 @media screen and (max-width: 991px) {

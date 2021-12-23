@@ -1,6 +1,6 @@
 import React from "react";
 import './TitleSection.css';
-import { IoIosArrowDown } from 'react-icons/io';
+    import { IoIosArrowDown } from 'react-icons/io';
 
 function TitleSection() {
     return (
@@ -13,7 +13,7 @@ function TitleSection() {
                     With privacy and ease of use in mind
                 </p>
                 <p className='title-description'>
-                    Learn more below
+                    Learn more
                 </p>
                 <div className='down-arrow'>
                     <IoIosArrowDown size='50'/>
