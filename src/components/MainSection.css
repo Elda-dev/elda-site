@@ -104,6 +104,26 @@
     display: inline-block;
 }
 
+.image_offset {
+    position: absolute;
+    border-radius: 15px;
+    transform: translateY(370px) translateX(310px);
+    border: 0px;
+    max-width: 100%;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.bg-image-offset {
+    position: absolute;
+    border-radius: 15px;
+    transform: translateY(5px) translateX(100px);
+    border: 0;
+    max-width: 100%;
+    vertical-align: middle;
+    display: inline-block;
+}
+
 .buffer {
     padding-bottom: var(--pad);
 }

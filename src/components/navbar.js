@@ -35,24 +35,32 @@ function Navbar() {
                  </div>
                  <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                      <li>
-                         <button to='/' className='nav-item'>
+                         <Link to='/'>
+                         <button className='nav-item'>
                              Home
                          </button>
+                         </Link>
                      </li>
                      <li>
-                         <button to='/' className='nav-item'>
+                         <Link to='/projects'>
+                         <button className='nav-item'>
                              Projects
                          </button>
+                         </Link>
                      </li>
                      <li>
-                         <button to='/' className='nav-item'>
+                         <Link to='/blog'>
+                         <button className='nav-item'>
                              Blog
                          </button>
+                         </Link>
                      </li>
                      <li>
-                         <button to='/' className='nav-item'>
+                         <Link to='/about'>
+                         <button className='nav-item'>
                              About
                          </button>
+                         </Link>
                      </li>
                  </ul>
              </div>

@@ -1,15 +1,16 @@
 import React from "react";
 import MainSection from "../../MainSection";
-
-import {homeObjOne, homeObjTwo, homeObjThree, homeObjFour} from "./Data";
+import {homeObjOne, homeObjTwo} from "./Data";
 import TitleSection from "./TitleSection";
+import SectionSelector from "./SectionSelector";
 
 function Home() {
     return (
         <>
-            <TitleSection/>
-            <MainSection {...homeObjOne} />
-            <MainSection {...homeObjTwo}/>
+            {/* <SectionSelector/> */}
+            <TitleSection id='Title'/>
+            <MainSection {...homeObjOne} id='Section_1'/>
+            <MainSection {...homeObjTwo} id='Section_2'/>
         </>
     )
 }

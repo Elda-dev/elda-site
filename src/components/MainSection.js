@@ -1,11 +1,7 @@
 import React from 'react';
 import './MainSection.css';
-import { Button } from './Button';
-import { Link } from 'react-router-dom';
-import elda_player from './images/elda_player.png';
-import elda_homescreen from './images/elda_homescreen.png';
-import { createGlobalStyle } from 'styled-components';
 import Parallax from 'react-rellax';
+import { Link } from 'react-router-dom';
 
 function MainSection(
     {
@@ -26,7 +22,9 @@ function MainSection(
         imgStart,
         shadow,
         padding,
-        padding_override
+        alt_img_location,
+        padding_override,
+        buttonLinkTo
     }) {
 
     console.log(padding);
@@ -73,17 +71,19 @@ function MainSection(
                                 >
                                     {description}
                                 </p>
-                                <button className={darkMode ? 'button dark' : 'button'}>
-                                    {buttonLabel}
-                                </button>
+                                <Link to={buttonLinkTo}>
+                                    <button className={darkMode ? 'button dark' : 'button'}>
+                                        {buttonLabel}
+                                    </button>
+                                </Link>
                             </div>
                         </div>
                         <div className='col'>
                             <Parallax speed={scroll? -0.25 : 0}>
-                                <img src={img1} alt={alt1} className={'bg-image ' + shadowProperties} width={img1_width} height={img1_height}/>
+                                <img src={img1} alt={alt1} className={alt_img_location? 'bg-image-offset ' + shadowProperties : 'bg-image ' + shadowProperties} width={img1_width} height={img1_height}/>
                             </Parallax>
                             <Parallax speed={scroll? 0.25 : 0}>
-                                <img src={img2} alt={alt2} className={'image ' + shadowProperties} width={img2_width} height={img2_height}/>
+                                <img src={img2} alt={alt2} className={alt_img_location? 'image_offset ' + shadowProperties : 'image ' + shadowProperties} width={img2_width} height={img2_height}/>
                             </Parallax>
                         </div>
                     </div>
